@@ -1,2 +1,8 @@
 <h1>{{ user.username }}</h1>
-<img src="{{user.profile.image.url}}" alt="" srcset="">
+<img src="{{ user.profile.image.url }}" alt="" srcset="">
+<!-- {{user.profile.image.url}}
+{% if "pictures/" not in user.profile.image.url %}
+    <img src="pictures/profile_pictures{{ user.profile.image.url }}" alt="" srcset="">
+{% else %}
+    <img src="{{ user.profile.image.url }}" alt="" srcset="">
+{% endif %} -->
